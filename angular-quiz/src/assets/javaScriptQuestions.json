@@ -1,0 +1,316 @@
+{
+    "id": 2,
+    "name": "JavaScript Quiz",
+    "questions": [
+        {
+            "id": 2010,
+            "question": "Which JavaScript syntax can change the content of the following HTML code? <p id='one'>Howdy Neighbor!</p>",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2011,
+                    "questionId": 2010,
+                    "name": "document.getElement('one').innerHTML='Doing Good!';",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2012,
+                    "questionId": 2010,
+                    "name": "document.getElementById('one').innerHTML='Doing Good!';",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2013,
+                    "questionId": 2010,
+                    "name": "document.getId('one').innerHTML='Doing Good!';",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2014,
+                    "questionId": 2010,
+                    "name": "document.getElementById('one').innerHTML=Doing Good!;",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2020,
+            "question": "Which of the following is the correct syntax to display 'JavaScript is fun!' in an alert box using JavaScript?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2021,
+                    "questionId": 2020,
+                    "name": "alertbox('JavaScript is fun!');",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2022,
+                    "questionId": 2020,
+                    "name": "msg('JavaScript is fun!');",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2023,
+                    "questionId": 2020,
+                    "name": "msgbox('JavaScript is fun!');",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2024,
+                    "questionId": 2020,
+                    "name": "alert('JavaScript is fun!');",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 2030,
+            "question": "What is the correct syntax for referring to an external script called 'sample.js'?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2031,
+                    "questionId": 2030,
+                    "name": "<script src='sample.js'>",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2032,
+                    "questionId": 2030,
+                    "name": "<script href='sample.js'>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2033,
+                    "questionId": 2030,
+                    "name": "<script ref='sample.js'>",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2034,
+                    "questionId": 2030,
+                    "name": "<script name='sample.js'>",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2040,
+            "question": "Which of the following is not a reserved word in JavaScript?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2041,
+                    "questionId": 2040,
+                    "name": "interface",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2042,
+                    "questionId": 2040,
+                    "name": "throws",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2043,
+                    "questionId": 2040,
+                    "name": "program",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2044,
+                    "questionId": 2040,
+                    "name": "short",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2050,
+            "question": "Which of the following is a valid type of function javascript supports?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2051,
+                    "questionId": 2050,
+                    "name": "named function",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2052,
+                    "questionId": 2050,
+                    "name": "anonymous function",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2053,
+                    "questionId": 2050,
+                    "name": "both of the above",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2054,
+                    "questionId": 2050,
+                    "name": "none of the above",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2060,
+            "question": "Which built-in method returns the index within the calling String object of the first occurrence of the specified value?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2061,
+                    "questionId": 2060,
+                    "name": "getIndex()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2062,
+                    "questionId": 2060,
+                    "name": "location()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2063,
+                    "questionId": 2060,
+                    "name": "indexOf()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2064,
+                    "questionId": 2060,
+                    "name": "none of the above",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2070,
+            "question": "Which of the following function of Number object returns a string value version of the current number in a format that may vary according to a browser's locale settings.?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2071,
+                    "questionId": 2070,
+                    "name": "toExponential()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2072,
+                    "questionId": 2070,
+                    "name": "toFixed()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2073,
+                    "questionId": 2070,
+                    "name": "toLocaleString()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2074,
+                    "questionId": 2070,
+                    "name": "toString()",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2080,
+            "question": "Which of the following function of String object returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2081,
+                    "questionId": 2080,
+                    "name": "localeCompare()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 2082,
+                    "questionId": 2080,
+                    "name": "search()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2083,
+                    "questionId": 2080,
+                    "name": "substr()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2084,
+                    "questionId": 2080,
+                    "name": "concat()",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 2090,
+            "question": "Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2091,
+                    "questionId": 2090,
+                    "name": "push()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2092,
+                    "questionId": 2090,
+                    "name": "join()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2093,
+                    "questionId": 2090,
+                    "name": "pop()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2094,
+                    "questionId": 2090,
+                    "name": "map()",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 2100,
+            "question": "Which of the following is not JavaScript Data Types?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 2101,
+                    "questionId": 2100,
+                    "name": "Undefined",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2102,
+                    "questionId": 2100,
+                    "name": "Number",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2103,
+                    "questionId": 2100,
+                    "name": "Boolean",
+                    "isAnswer": false
+                },
+                {
+                    "id": 2104,
+                    "questionId": 2100,
+                    "name": "Float",
+                    "isAnswer": true
+                }
+            ]
+        }
+    ]
+}

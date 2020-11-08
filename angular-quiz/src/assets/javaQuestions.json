@@ -1,0 +1,306 @@
+{
+    "id": 1,
+    "name": "Java Quiz",
+    "questions": [
+        {
+            "id": 1010,
+            "question": "Which one of the following is true for Java?",
+            "options": [
+                {
+                    "id": 1011,
+                    "questionId": 1010,
+                    "name": "Java is object-oriented and interpreted",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1012,
+                    "questionId": 1010,
+                    "name": "Java is efficient and faster than C",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1013,
+                    "questionId": 1010,
+                    "name": "Java is the choice of everyone",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1014,
+                    "questionId": 1010,
+                    "name": "Java is not robust",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1020,
+            "question": "The command javac is used to do what?",
+            "options": [
+                {
+                    "id": 1021,
+                    "questionId": 1020,
+                    "name": "debug a java program",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1022,
+                    "questionId": 1020,
+                    "name": "compile a java program",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1023,
+                    "questionId": 1020,
+                    "name": "interpret a java program",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1024,
+                    "questionId": 1020,
+                    "name": "execute a java program",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1030,
+            "question": "Native-protocol pure Java converts _________ into the _________ used by DBMSs directly.",
+            "options": [
+                {
+                    "id": 1031,
+                    "questionId": 1030,
+                    "name": "JDBC calls, network protocol",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1032,
+                    "questionId": 1030,
+                    "name": "ODBC class, network protocol",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1033,
+                    "questionId": 1030,
+                    "name": "ODBC class, user call",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1034,
+                    "questionId": 1030,
+                    "name": "JDBC calls, user call",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1040,
+            "question": "Which of the following is not the Java primitive type?",
+            "options": [
+                {
+                    "id": 1041,
+                    "questionId": 1040,
+                    "name": "Byte",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1042,
+                    "questionId": 1040,
+                    "name": "Float",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1043,
+                    "questionId": 1040,
+                    "name": "Character",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1044,
+                    "questionId": 1040,
+                    "name": "Long double",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 1050,
+            "question": "The jdb is used to do what?",
+            "options": [
+                {
+                    "id": 1051,
+                    "questionId": 1050,
+                    "name": "Create a jar archive",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1052,
+                    "questionId": 1050,
+                    "name": "Debug a java program",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1053,
+                    "questionId": 1050,
+                    "name": "Create a C header file",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1054,
+                    "questionId": 1050,
+                    "name": "Generate java documentation",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1060,
+            "question": "When a programming class implements an interface, it must provide behavior for?",
+            "options": [
+                {
+                    "id": 1061,
+                    "questionId": 1060,
+                    "name": "two methods defined in that interface",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1062,
+                    "questionId": 1060,
+                    "name": "any methods in a class",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1063,
+                    "questionId": 1060,
+                    "name": "only certain methods in that interface",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1064,
+                    "questionId": 1060,
+                    "name": "all methods defined in that interface",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 1070,
+            "question": "In order to run JSP _________ is required.",
+            "options": [
+                {
+                    "id": 1071,
+                    "questionId": 1070,
+                    "name": "Mail Server",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1072,
+                    "questionId": 1070,
+                    "name": "Applet viewer",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1073,
+                    "questionId": 1070,
+                    "name": "Java Web Server",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1074,
+                    "questionId": 1070,
+                    "name": "Database connection",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1080,
+            "question": "Prepared Statement object in JDBC used to execute _________ queries.",
+            "options": [
+                {
+                    "id": 1081,
+                    "questionId": 1080,
+                    "name": "Executable",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1082,
+                    "questionId": 1080,
+                    "name": "Simple",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1083,
+                    "questionId": 1080,
+                    "name": "High level",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1084,
+                    "questionId": 1080,
+                    "name": "Parameterized",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 1090,
+            "question": "When the operators are having the same priority, they are evaluated from ___________ in the order they appear in the expression.",
+            "options": [
+                {
+                    "id": 1091,
+                    "questionId": 1090,
+                    "name": "right to left",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1092,
+                    "questionId": 1090,
+                    "name": "left to right",
+                    "isAnswer": true
+                },
+                {
+                    "id": 1093,
+                    "questionId": 1090,
+                    "name": "any of the order",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1094,
+                    "questionId": 1090,
+                    "name": "depends on the compiler",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 1100,
+            "question": "The out object is an object encapsulated inside the ________ class and represents the standard output device.",
+            "options": [
+                {
+                    "id": 1101,
+                    "questionId": 1100,
+                    "name": "standard",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1102,
+                    "questionId": 1100,
+                    "name": "local",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1103,
+                    "questionId": 1100,
+                    "name": "global",
+                    "isAnswer": false
+                },
+                {
+                    "id": 1104,
+                    "questionId": 1100,
+                    "name": "system",
+                    "isAnswer": true
+                }
+            ]
+        }
+    ]
+}

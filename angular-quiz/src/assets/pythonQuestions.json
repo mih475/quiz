@@ -1,0 +1,316 @@
+{
+    "id": 3,
+    "name": "Python Quiz",
+    "questions": [
+        {
+            "id": 3010,
+            "question": "What is output for − 2 * 2 ** 3 ?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3011,
+                    "questionId": 3010,
+                    "name": "12",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3012,
+                    "questionId": 3010,
+                    "name": "64",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3013,
+                    "questionId": 3010,
+                    "name": "16",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3014,
+                    "questionId": 3010,
+                    "name": "36",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3020,
+            "question": "What is output of following − print('any'.encode()) ?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3021,
+                    "questionId": 3020,
+                    "name": "'any'",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3022,
+                    "questionId": 3020,
+                    "name": "'yan'",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3023,
+                    "questionId": 3020,
+                    "name": "b'any'",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3024,
+                    "questionId": 3020,
+                    "name": "x'any'",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3030,
+            "question": "Which options are correct to create an empty set in Python?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3031,
+                    "questionId": 3030,
+                    "name": "{}",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3032,
+                    "questionId": 3030,
+                    "name": "()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3033,
+                    "questionId": 3030,
+                    "name": "[]",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3034,
+                    "questionId": 3030,
+                    "name": "set()",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 3040,
+            "question": "How to create a frame in Python?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3041,
+                    "questionId": 3040,
+                    "name": "Frame = new.window()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3042,
+                    "questionId": 3040,
+                    "name": "Frame = frame.new()",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3043,
+                    "questionId": 3040,
+                    "name": "Frame = Frame()",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3044,
+                    "questionId": 3040,
+                    "name": "Frame = window.new()",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3050,
+            "question": "Using the pack manager, how you can you put the components in a container in the same row?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3051,
+                    "questionId": 3050,
+                    "name": "Component.pack(side= 'LEFT')",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3052,
+                    "questionId": 3050,
+                    "name": "Component.pack('Left')",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3053,
+                    "questionId": 3050,
+                    "name": "Component.pack(side=LEFT)",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3054,
+                    "questionId": 3050,
+                    "name": "Component.pack(Left-side)",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3060,
+            "question": "Which keyword is use for function?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3061,
+                    "questionId": 3060,
+                    "name": "define",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3062,
+                    "questionId": 3060,
+                    "name": "fun",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3063,
+                    "questionId": 3060,
+                    "name": "def",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3064,
+                    "questionId": 3060,
+                    "name": "function",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3070,
+            "question": "Which of the following items are present in the function header?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3071,
+                    "questionId": 3070,
+                    "name": "function name",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3072,
+                    "questionId": 3070,
+                    "name": "parameter list",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3073,
+                    "questionId": 3070,
+                    "name": "return value",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3074,
+                    "questionId": 3070,
+                    "name": "both A and B",
+                    "isAnswer": true
+                }
+            ]
+        },
+        {
+            "id": 3080,
+            "question": "If return statement is not used inside the function, the function will return what?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3081,
+                    "questionId": 3080,
+                    "name": "none",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3082,
+                    "questionId": 3080,
+                    "name": "0",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3083,
+                    "questionId": 3080,
+                    "name": "null",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3084,
+                    "questionId": 3080,
+                    "name": "arbitary value",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3090,
+            "question": "Which operator is used in Python to import modules from packages?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3091,
+                    "questionId": 3090,
+                    "name": ".",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3092,
+                    "questionId": 3090,
+                    "name": "*",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3093,
+                    "questionId": 3090,
+                    "name": "->",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3094,
+                    "questionId": 3090,
+                    "name": "&",
+                    "isAnswer": false
+                }
+            ]
+        },
+        {
+            "id": 3100,
+            "question": "What is the output of the following program - print(chr(ord(chr(97)))) ?",
+            "isAnswered": false,
+            "options": [
+                {
+                    "id": 3101,
+                    "questionId": 3100,
+                    "name": "a",
+                    "isAnswer": true
+                },
+                {
+                    "id": 3102,
+                    "questionId": 3100,
+                    "name": "A",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3103,
+                    "questionId": 3100,
+                    "name": "97",
+                    "isAnswer": false
+                },
+                {
+                    "id": 3104,
+                    "questionId": 3100,
+                    "name": "error",
+                    "isAnswer": false
+                }
+            ]
+        }
+    ]
+}
