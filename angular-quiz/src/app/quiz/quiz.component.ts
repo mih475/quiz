@@ -40,6 +40,7 @@ export class QuizComponent implements OnInit {
     size: 1,
     count: 1
   };
+  score = 0;
   timer: any = null;
   startTime: Date;
   endTime: Date;
@@ -113,6 +114,7 @@ export class QuizComponent implements OnInit {
   isCorrect(question: Question) {
     //return question.options.find(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
     if (question.options.find(x => x.selected === x.isAnswer)) {
+      this.score++;
       return 'Your answer is correct.';
     } else {
       var cor;
