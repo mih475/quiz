@@ -112,7 +112,7 @@ export class QuizComponent implements OnInit {
 
   isCorrect(question: Question) {
     //return question.options.find(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
-    if (question.options.every(x => x.selected === x.isAnswer)) {
+    if (question.options.find(x => x.selected === x.isAnswer)) {
       return 'Your answer is correct.';
     } else {
       var cor;
