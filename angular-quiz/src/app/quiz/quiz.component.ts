@@ -24,14 +24,14 @@ export class QuizComponent implements OnInit {
     'allowBack': true, 
     'allowReview': true,
     // 'autoMove': false,  // if true, it will move to next question automatically when answered.
-    'duration': 600,  // indicates the time (in secs) in which quiz needs to be completed. 0 means unlimited.
+    'duration': 300,  // indicates the time (in secs) in which quiz needs to be completed. 0 means unlimited.
     'pageSize': 1,
     'requiredAll': false,  // indicates if you must answer all the questions before submitting.
     'richText': false,
     'shuffleQuestions': false,
     'shuffleOptions': false,
     'showClock': false,
-    'showPager': false,
+    'showPager': true,
     'theme': 'none'
   };
 
@@ -50,9 +50,55 @@ export class QuizComponent implements OnInit {
 
   constructor(private quizService: QuizService) { }
 
+  disNext(){
+    if(this.pager.index > 0){
+      (<HTMLInputElement>document.getElementById("pr")).disabled = false;
+    }
+
+    if(this.pager.index > 8){
+      (<HTMLInputElement>document.getElementById("nx")).disabled = true;
+    }
+  }
+  disPrev(){
+    if(this.pager.index == 0){
+      (<HTMLInputElement>document.getElementById("pr")).disabled = true;
+    }
+
+    if(this.pager.index <= 8){
+      (<HTMLInputElement>document.getElementById("nx")).disabled = false;
+    }
+  }
+
+  checkBoxTickCheck(){
+    if((document.querySelectorAll('input[type="checkbox"]:checked')).length > 1){
+      alert("Please select only one option as your answer")
+    }
+    else{
+      this.goTo(this.pager.index + 1);
+    }
+  }
+
+  checkBoxTickCheckBack(){
+    if((document.querySelectorAll('input[type="checkbox"]:checked')).length > 1){
+      alert("Please select only one option as your answer")
+    }
+    else{
+      this.goTo(this.pager.index - 1);
+    }
+  }
+
+  checkBoxTickCheckBeforeSubmit(){
+    if((document.querySelectorAll('input[type="checkbox"]:checked')).length > 1){
+      alert("Please select only one option as your answer")
+    }
+    else{
+      this.onSubmit();
+    }
+  }
+
+
   ngOnInit() {
     this.quizes = this.quizService.getAll();
-    console.log("This is it");
     console.log(this.quizes);
     this.quizName = this.quizes[0].id;
     console.log("I loaded " + this.quizName);
@@ -60,10 +106,11 @@ export class QuizComponent implements OnInit {
   }
 
   loadQuiz(quizName: string) {
-    // this.quizService.get('javaQuestions.json').subscribe(res=>console.log(res));
+    
     this.quizService.get(quizName).subscribe(res => {
       this.quiz = new Quiz(res);
       this.pager.count = this.quiz.questions.length;
+      this.pager.index = 0;
       this.startTime = new Date();
       this.ellapsedTime = '00:00';
       this.timer = setInterval(() => { this.tick(); }, 1000);
@@ -114,7 +161,6 @@ export class QuizComponent implements OnInit {
   isCorrect(question: Question) {
     //return question.options.find(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
     if (question.options.find(x => x.selected === x.isAnswer)) {
-      this.score++;
       return 'Your answer is correct.';
     } else {
       var cor;
@@ -134,6 +180,13 @@ export class QuizComponent implements OnInit {
     this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
 
     // Post your data to the server here. answers contains the questionId and the users' answer.
+
+    for(var i =0; i<this.quiz.questions.length;i++){
+      if(this.quiz.questions[i].options.find(x => x.selected === x.isAnswer)){
+        this.quiz.score++;
+      }
+    }
+
     console.log(this.quiz.questions);
     console.log(this.quiz.score);
     this.mode = 'result';

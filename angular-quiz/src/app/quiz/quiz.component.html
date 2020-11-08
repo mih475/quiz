@@ -1,3 +1,10 @@
+<head>
+  <script>
+    function myFunction() {
+      alert("Hello");
+    }
+  </script>
+</head>
 <div style="text-align:center; margin: auto; width: 100%;">
   <!-- <div class="col-6">
     <h3>Quiz Application</h3>
@@ -39,27 +46,28 @@
       <div class="row text-left options">
         <div class="col-6" *ngFor="let option of question.options">
           <div class="option">
-            <label class="font-weight-normal" [attr.for]="option.id">
-              <input id="{{option.id}}" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.name}}
+            <label class="checkbox-inline" [attr.for]="option.id">
+              <input  id="{{option.id}}" name ="op" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.name}}
             </label>
           </div>
         </div>
       </div>
     </div>
+    <br>
     <hr />
     <div class="text-center">
-      <button class="btn btn-default" *ngIf="config.allowBack" (click)="goTo(pager.index - 1);">Prev</button>
-      <button class="btn btn-primary" (click)="goTo(pager.index + 1);">Next</button>
+      <button id="pr" class="btn btn-default" style="margin-right: 10px;" disabled="disabled" *ngIf="config.allowBack" (click)="checkBoxTickCheckBack(); disPrev();">Prev</button>
+      <button id="nx" class="btn btn-primary" (click)= "checkBoxTickCheck(); disNext();" >Next</button>
     </div>
   </div>
 
-  <div class="row text-center" *ngIf="mode=='review'">
+  <div class="row text-center" *ngIf="mode=='review'" style="width:450px; margin:0 auto;">
     <div class="col-4 cursor-pointer" *ngFor="let question of quiz.questions; let index = index;">
       <div (click)="goTo(index)" class="p-3 mb-2 {{ isAnswered(question) == 'Answered'? 'bg-info': 'bg-warning' }}">{{index + 1}}. {{ isAnswered(question) }}</div>
     </div>
   </div>
-  <div class="result" *ngIf="mode=='result'">
-    <h2>Quiz Result (Your score is {{score}})</h2>
+  <div class="result" *ngIf="mode=='result'" style="width:500px; margin:0 auto;">
+    <h2>Quiz Result (Your score is {{quiz.score}} out of {{pager.count}})</h2>
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
         <h5>{{index + 1}}. {{question.name}}</h5>
@@ -71,13 +79,15 @@
         <div><br>{{isCorrect(question)}}</div>
       </div>
     </div>
-    <button onClick="window.location.reload();">Go Back to Homepage</button>
+    <br>
+    <button onClick="window.location.reload();" style="margin: 0 auto;">Go Back to Homepage</button>
   </div>
 
   <hr />
   <div *ngIf="mode!='result'" style="text-align: center;">
-    <button class="btn btn-warning" (click)="mode = 'quiz'">Quiz</button>
-    <button class="btn btn-info" (click)="mode = 'review'">Review</button>
-    <button class="btn btn-primary" (click)="onSubmit();">Submit Quiz</button>
+    <button class="btn btn-warning" (click)="mode = 'quiz'" style="margin-right: 10px;">Back to Quiz</button>
+    <button class="btn btn-info" (click)="mode = 'review'" style="margin-right: 10px;">Review</button>
+    <button class="btn btn-primary" (click)="checkBoxTickCheckBeforeSubmit();">Submit Quiz</button>
   </div>
 </div>
+
