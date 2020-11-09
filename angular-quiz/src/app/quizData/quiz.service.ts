@@ -7,8 +7,7 @@ export class QuizService {
     constructor(private http: HttpClient) { }
   
     get(url: string) {
-      console.log("I Hate This");
-      console.log(this.http.get(url));
+
       return this.http.get(url);
     }
   

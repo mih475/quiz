@@ -6,18 +6,9 @@
   </script>
 </head>
 <div style="text-align:center; margin: auto; width: 100%;">
-  <!-- <div class="col-6">
-    <h3>Quiz Application</h3>
-  </div> -->
   <h1>
     Test Your Programming Knowledge!
   </h1>
-  <!-- <div class="col-6 text-right">
-    Select Quiz:
-    <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
-      <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
-    </select>
-  </div> -->
   <h2>Choose your quiz option:</h2>
   <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)" style="font-size: 100%; font-weight: bold;">
     <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
@@ -32,6 +23,8 @@
   <hr />
 
   <div *ngIf="mode=='quiz' && quiz" style="width:450px; margin:0 auto;">
+    {{disNext()}}
+    {{disPrev()}}
     <div *ngFor="let question of filteredQuestions;">
       <div class="badge badge-info">
         Question {{pager.index + 1}} of {{pager.count}}.
@@ -67,6 +60,7 @@
     </div>
   </div>
   <div class="result" *ngIf="mode=='result'" style="width:500px; margin:0 auto;">
+
     <h2>Quiz Result (Your score is {{quiz.score}} out of {{pager.count}})</h2>
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
@@ -82,11 +76,10 @@
     <br>
     <button onClick="window.location.reload();" style="margin: 0 auto;">Go Back to Homepage</button>
   </div>
-
   <hr />
   <div *ngIf="mode!='result'" style="text-align: center;">
-    <button class="btn btn-warning" (click)="mode = 'quiz'" style="margin-right: 10px;">Back to Quiz</button>
-    <button class="btn btn-info" (click)="mode = 'review'" style="margin-right: 10px;">Review</button>
+    <button class="btn btn-warning" (click)="mode = 'quiz';" style="margin-right: 10px;">Back to Quiz</button>
+    <button class="btn btn-info" (click)="checkTickCheckBoxBeforeReview()" style="margin-right: 10px;">Review</button>
     <button class="btn btn-primary" (click)="checkBoxTickCheckBeforeSubmit();">Submit Quiz</button>
   </div>
 </div>

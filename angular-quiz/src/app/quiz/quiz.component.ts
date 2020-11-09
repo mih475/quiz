@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
 import { QuizService } from '../quizData/quiz.service';
-import { HelperService } from '../quizData/helper.service';
-//import { Option, Question, Quiz, QuizConfig } from '../models/index';
 import { Option } from '../quizData/option';
 import { Question } from '../quizData/question';
 import { Quiz } from '../quizData/quiz';
@@ -23,8 +20,7 @@ export class QuizComponent implements OnInit {
   config: QuizConfig = {
     'allowBack': true, 
     'allowReview': true,
-    // 'autoMove': false,  // if true, it will move to next question automatically when answered.
-    'duration': 300,  // indicates the time (in secs) in which quiz needs to be completed. 0 means unlimited.
+    'duration': 300,  // 5 min
     'pageSize': 1,
     'requiredAll': false,  // indicates if you must answer all the questions before submitting.
     'richText': false,
@@ -96,12 +92,19 @@ export class QuizComponent implements OnInit {
     }
   }
 
+  checkTickCheckBoxBeforeReview(){
+    if((document.querySelectorAll('input[type="checkbox"]:checked')).length > 1){
+      alert("Please select only one option as your answer")
+    }
+    else{
+      this.mode = 'review';
+    }
+  }
+
 
   ngOnInit() {
     this.quizes = this.quizService.getAll();
-    console.log(this.quizes);
     this.quizName = this.quizes[0].id;
-    console.log("I loaded " + this.quizName);
     this.loadQuiz(this.quizName);
   }
 
@@ -159,7 +162,6 @@ export class QuizComponent implements OnInit {
   };
 
   isCorrect(question: Question) {
-    //return question.options.find(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
     if (question.options.find(x => x.selected === x.isAnswer)) {
       return 'Your answer is correct.';
     } else {
@@ -178,17 +180,12 @@ export class QuizComponent implements OnInit {
   onSubmit() {
     let answers = [];
     this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
-
-    // Post your data to the server here. answers contains the questionId and the users' answer.
-
     for(var i =0; i<this.quiz.questions.length;i++){
       if(this.quiz.questions[i].options.find(x => x.selected === x.isAnswer)){
         this.quiz.score++;
       }
     }
-
-    console.log(this.quiz.questions);
-    console.log(this.quiz.score);
+    clearInterval(this.timer);
     this.mode = 'result';
   }
 
